@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Monasteries of Sikkim: Where Heaven Meets Earth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>🏔️ Sikkim Monasteries</h3>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#monasteries" class="nav-link">Monasteries</a></li>
+                <li><a href="#architecture" class="nav-link">Architecture</a></li>
+                <li><a href="#visitor-guide" class="nav-link">Visitor Guide</a></li>
+                <li><a href="#festivals" class="nav-link">Festivals</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Sacred Monasteries of Sikkim</h1>
+                <p class="hero-subtitle">Where Heaven Meets Earth</p>
+                <p class="hero-description">Discover the spiritual heart of the Himalayas through Sikkim's ancient monasteries, where centuries-old traditions, stunning architecture, and profound spirituality create a bridge between earth and sky.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>6</h3>
+                        <p>Featured Monasteries</p>
+                    </div>
+                    <div class="stat">
+                        <h3>300+</h3>
+                        <p>Years of Heritage</p>
+                    </div>
+                    <div class="stat">
+                        <h3>1000s</h3>
+                        <p>Annual Pilgrims</p>
+                    </div>
+                </div>
+                <button class="btn btn--primary hero-cta" onclick="scrollToSection('monasteries')">Explore Monasteries</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://pplx-res.cloudinary.com/image/upload/v1755032011/pplx_project_search_images/180384246c00f12346b2567f3e5d23cf9eba4dc5.png" alt="Rumtek Monastery - The Crown Jewel">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Monasteries -->
+    <section id="monasteries" class="monasteries">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Monasteries</h2>
+                <p>Explore the six most sacred and architecturally significant monasteries of Sikkim</p>
+            </div>
+            
+            <div class="monasteries-grid">
+                <div class="monastery-card" data-monastery="rumtek">
+                    <div class="monastery-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755032011/pplx_project_search_images/180384246c00f12346b2567f3e5d23cf9eba4dc5.png" alt="Rumtek Monastery">
+                    </div>
+                    <div class="monastery-info">
+                        <h3>Rumtek Monastery</h3>
+                        <p class="monastery-subtitle">Dharma Chakra Centre - The Crown Jewel</p>
+                        <p class="monastery-location">📍 24 km from Gangtok, East Sikkim</p>
+                        <button class="btn btn--secondary" onclick="openMonasteryModal('rumtek')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="monastery-card" data-monastery="pemayangtse">
+                    <div class="monastery-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1757563898/pplx_project_search_images/0150dd37828891f2f98a2137c7942f89eaa8642e.png" alt="Pemayangtse Monastery">
+                    </div>
+                    <div class="monastery-info">
+                        <h3>Pemayangtse Monastery</h3>
+                        <p class="monastery-subtitle">Perfect Sublime Lotus</p>
+                        <p class="monastery-location">📍 2 km from Pelling, West Sikkim</p>
+                        <button class="btn btn--secondary" onclick="openMonasteryModal('pemayangtse')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="monastery-card" data-monastery="dubdi">
+                    <div class="monastery-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1758195980/pplx_project_search_images/1979a5d4c67ffcfea65426862e77c114e682f26f.png" alt="Dubdi Monastery">
+                    </div>
+                    <div class="monastery-info">
+                        <h3>Dubdi Monastery</h3>
+                        <p class="monastery-subtitle">The Hermit's Cell - Oldest Monastery</p>
+                        <p class="monastery-location">📍 3 km from Yuksom, West Sikkim</p>
+                        <button class="btn btn--secondary" onclick="openMonasteryModal('dubdi')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="monastery-card" data-monastery="tashiding">
+                    <div class="monastery-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1758195979/pplx_project_search_images/5efbf37267b6f5329e5c9b6f6923edccb2cfd365.png" alt="Tashiding Monastery">
+                    </div>
+                    <div class="monastery-info">
+                        <h3>Tashiding Monastery</h3>
+                        <p class="monastery-subtitle">The Heart of Sikkim</p>
+                        <p class="monastery-location">📍 Tashiding, West Sikkim</p>
+                        <button class="btn btn--secondary" onclick="openMonasteryModal('tashiding')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="monastery-card" data-monastery="enchey">
+                    <div class="monastery-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1756904811/pplx_project_search_images/1f28bff385bc6257f4107e07cf8427fff9eda332.png" alt="Enchey Monastery">
+                    </div>
+                    <div class="monastery-info">
+                        <h3>Enchey Monastery</h3>
+                        <p class="monastery-subtitle">The Solitary Temple</p>
+                        <p class="monastery-location">📍 3 km from Gangtok center</p>
+                        <button class="btn btn--secondary" onclick="openMonasteryModal('enchey')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="monastery-card" data-monastery="phodong">
+                    <div class="monastery-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1756399790/pplx_project_search_images/6eaf58474c20519a21e60c0580701599e5c0c532.png" alt="Phodong Monastery">
+                    </div>
+                    <div class="monastery-info">
+                        <h3>Phodong Monastery</h3>
+                        <p class="monastery-subtitle">Beautiful Mountain Monastery</p>
+                        <p class="monastery-location">📍 28 km from Gangtok, North Sikkim</p>
+                        <button class="btn btn--secondary" onclick="openMonasteryModal('phodong')">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture & Culture -->
+    <section id="architecture" class="architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2>Architecture & Culture</h2>
+                <p>Understanding the spiritual and artistic heritage of Tibetan Buddhist monasteries</p>
+            </div>
+            
+            <div class="architecture-content">
+                <div class="architecture-features">
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🏛️</div>
+                            <h4>Traditional Design</h4>
+                            <p>Tibetan Buddhist architecture adapted to Himalayan conditions with sloping roofs and stone foundations</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎨</div>
+                            <h4>Vibrant Murals</h4>
+                            <p>Colorful murals depicting Buddhist mythology and teachings adorn monastery walls</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚡</div>
+                            <h4>Prayer Wheels</h4>
+                            <p>Sacred wheels containing mantras, spun clockwise for spiritual merit</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🏔️</div>
+                            <h4>Sacred Stupas</h4>
+                            <p>Golden stupas housing relics and representing the enlightened mind</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cultural-significance">
+                    <div class="culture-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1756240520/pplx_project_search_images/4fe76b1e1308ca8dd95d6ab8e33a7f952118c189.png" alt="Traditional Tibetan Wood Carvings">
+                    </div>
+                    <div class="culture-text">
+                        <h3>Cultural Significance</h3>
+                        <ul class="culture-list">
+                            <li>Preservation of Tibetan Buddhist culture in exile</li>
+                            <li>Centers of learning and spiritual practice</li>
+                            <li>Repositories of ancient manuscripts and art</li>
+                            <li>Cultural bridge between Tibet and India</li>
+                            <li>Centers for community festivals and celebrations</li>
+                            <li>Training grounds for Buddhist monks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visitor Guide -->
+    <section id="visitor-guide" class="visitor-guide">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visitor Guide</h2>
+                <p>Essential information for your spiritual journey through Sikkim's monasteries</p>
+            </div>
+            
+            <div class="guide-content">
+                <div class="guide-section">
+                    <h3>🙏 Visitor Guidelines</h3>
+                    <div class="guidelines-grid">
+                        <div class="guideline">
+                            <span class="guideline-icon">🔇</span>
+                            <p>Maintain peace and tranquility</p>
+                        </div>
+                        <div class="guideline">
+                            <span class="guideline-icon">👟</span>
+                            <p>Remove shoes before entering main halls</p>
+                        </div>
+                        <div class="guideline">
+                            <span class="guideline-icon">📱</span>
+                            <p>No loud noises or mobile phone use</p>
+                        </div>
+                        <div class="guideline">
+                            <span class="guideline-icon">🚫</span>
+                            <p>Do not touch artifacts and holy objects</p>
+                        </div>
+                        <div class="guideline">
+                            <span class="guideline-icon">↻</span>
+                            <p>Circumambulate monastery clockwise</p>
+                        </div>
+                        <div class="guideline">
+                            <span class="guideline-icon">📸</span>
+                            <p>Seek permission before photography</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="guide-section">
+                    <h3>🌤️ Best Times to Visit</h3>
+                    <div class="seasons">
+                        <div class="season">
+                            <h4>Peak Season</h4>
+                            <p>March to June, September to November</p>
+                            <small>Clear skies and pleasant weather</small>
+                        </div>
+                        <div class="season">
+                            <h4>Festival Season</h4>
+                            <p>February to March (Losar, Bumchu)</p>
+                            <small>Experience authentic cultural celebrations</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="guide-section">
+                    <h3>🗺️ Pilgrimage Circuit</h3>
+                    <div class="circuit-route">
+                        <div class="route-step">1. Dubdi Monastery (Yuksom)</div>
+                        <div class="route-arrow">→</div>
+                        <div class="route-step">2. Norbugang Chorten</div>
+                        <div class="route-arrow">→</div>
+                        <div class="route-step">3. Pemayangtse Monastery</div>
+                        <div class="route-arrow">→</div>
+                        <div class="route-step">4. Tashiding Monastery</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Festivals & Events -->
+    <section id="festivals" class="festivals">
+        <div class="container">
+            <div class="section-header">
+                <h2>Festivals & Events</h2>
+                <p>Sacred celebrations and cultural events throughout the year</p>
+            </div>
+            
+            <div class="festivals-grid">
+                <div class="festival-card">
+                    <div class="festival-date">Feb-Mar</div>
+                    <h4>Losar (Tibetan New Year)</h4>
+                    <p>Celebrated at Rumtek with traditional Cham dances and prayers</p>
+                    <div class="festival-location">📍 Rumtek Monastery</div>
+                </div>
+                <div class="festival-card">
+                    <div class="festival-date">Feb-Mar</div>
+                    <h4>Bumchu Festival</h4>
+                    <p>Sacred water predictions for the coming year</p>
+                    <div class="festival-location">📍 Tashiding Monastery</div>
+                </div>
+                <div class="festival-card">
+                    <div class="festival-date">Feb-Mar</div>
+                    <h4>Guru Drakmar Chham</h4>
+                    <p>Masked dance performance depicting good over evil</p>
+                    <div class="festival-location">📍 Pemayangtse Monastery</div>
+                </div>
+                <div class="festival-card">
+                    <div class="festival-date">Jan-Feb</div>
+                    <h4>Detor Cham</h4>
+                    <p>Ritual dance to ward off evil spirits</p>
+                    <div class="festival-location">📍 Enchey Monastery</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Plan Your Visit</h2>
+                <p>Get in touch for personalized monastery tour guidance</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="inquiry-form">
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Interested Monasteries</label>
+                            <select class="form-control" name="monastery">
+                                <option value="">Select a monastery</option>
+                                <option value="rumtek">Rumtek Monastery</option>
+                                <option value="pemayangtse">Pemayangtse Monastery</option>
+                                <option value="dubdi">Dubdi Monastery</option>
+                                <option value="tashiding">Tashiding Monastery</option>
+                                <option value="enchey">Enchey Monastery</option>
+                                <option value="phodong">Phodong Monastery</option>
+                                <option value="all">All Monasteries</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" name="message" rows="4" placeholder="Tell us about your visit plans..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Inquiry</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Tourism Information</h3>
+                    <div class="info-item">
+                        <strong>📧 Email:</strong>
+                        <p>info@sikkimmonasteries.in</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>📞 Phone:</strong>
+                        <p>+91-3592-202-XXX</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>🕒 Office Hours:</strong>
+                        <p>9:00 AM - 6:00 PM (Mon-Sat)</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>🌐 Visit:</strong>
+                        <p>Sikkim Tourism Development Corporation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monastery Detail Modal -->
+    <div id="monastery-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="modal-close" onclick="closeMonasteryModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>🏔️ Sikkim Monasteries</h4>
+                    <p>Preserving and sharing the spiritual heritage of Sikkim's sacred monasteries</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#monasteries">Featured Monasteries</a></li>
+                        <li><a href="#architecture">Architecture</a></li>
+                        <li><a href="#visitor-guide">Visitor Guide</a></li>
+                        <li><a href="#festivals">Festivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 info@sikkimmonasteries.in</p>
+                    <p>📞 +91-3592-202-XXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sikkim Monasteries. Preserving cultural heritage for future generations.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
